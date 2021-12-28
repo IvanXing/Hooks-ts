@@ -14,7 +14,7 @@ const MouseTracker: React.FC = () => {
       console.log('remove effect', position.x)
       document.removeEventListener('click', updateMouse)
     }
-  })
+  }, [])
   console.log('first render', position.x)
   return (
     <p>X: {position.x}, Y: {position.y}</p>
